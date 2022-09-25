@@ -2,11 +2,11 @@
 # vim: set ft=ruby :
 
 MACHINES = {
-  :host1 => {
+  :SRV1 => {
         :box_name => "centos/7",
         :ip_addr => '192.168.56.150'
   },
-  :host2 => {
+  :SRV2 => {
         :box_name => "centos/7",
         :ip_addr => '192.168.56.151'
   }
