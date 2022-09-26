@@ -4,6 +4,7 @@ ___
  
 **После клонирования репозитория выполняем команду vagrant up, дожидаемся поднятия двух виртуальных машин, после чего запускаем playbook - ansible-playbook nginx.yml. Проверяем с помощью curl доступность вебсервера по адресу 192.168.56.150:8080. Вывод представлен ниже**
 
+
 ```
 curl http://192.168.56.150:8080
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -164,6 +165,10 @@ href="http://wiki.centos.org/FAQ/">FAQ</a>.</p>
 </html>
 
 ```
+
+
+**Вывод на втором сервере аналогичен и опущен.**
+
 ---
 
 ### Описание содержания репозитория.
@@ -175,6 +180,6 @@ href="http://wiki.centos.org/FAQ/">FAQ</a>.</p>
 
 ***3. В файле [ansible.cfg](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/ansible.cfg) описаны общие настройки, которые касаются имени пользователя, расположения Inventoy.***
 
-***4. Шаблон [конфига nginx](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/templates/nginx.conf.j2) размещен в папке templates, в нем переменной прописан нестандартный порт 8080 для nginx.***
+***4. Шаблон [конфига nginx](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/templates/nginx.conf.j2) размещен в папке templates, в нем переменной прописан нестандартный для nginx.***
 
-***5. [Плейбук](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/nginx.yml) для установки и конфигурации nginx c использованием headlers и notify, yum расположен в корневой директории.
+**5. [Плейбук](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/nginx.yml) для установки и конфигурации nginx c использованием headlers и notify, yum расположен в корневой директории. Значение переменной по порту, который будет слушать сервер nginx так же указан в плейбуке. Значение 8080**
