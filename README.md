@@ -180,6 +180,6 @@ href="http://wiki.centos.org/FAQ/">FAQ</a>.</p>
 
 ***3. В файле [ansible.cfg](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/ansible.cfg) описаны общие настройки, которые касаются имени пользователя, расположения Inventoy.***
 
-***4. Шаблон [конфига nginx](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/templates/nginx.conf.j2) размещен в папке templates, в нем переменной прописан нестандартный для nginx.***
+***4. Шаблон [конфига nginx](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/templates/nginx.conf.j2) размещен в папке templates, в нем переменной прописан нестандартный для nginx порт.***
 
 **5. [Плейбук](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/nginx.yml) для установки и конфигурации nginx c использованием headlers и notify, yum расположен в корневой директории. Значение переменной по порту, который будет слушать сервер nginx так же указан в плейбуке. Значение 8080**
