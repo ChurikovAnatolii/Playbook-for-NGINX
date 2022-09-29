@@ -1,9 +1,8 @@
-### Описание работы стенда.
+### Описание работы стенда
 
 ___
- 
-**После клонирования репозитория выполняем команду vagrant up, дожидаемся поднятия двух виртуальных машин, после чего запускаем playbook - ansible-playbook nginx.yml. Проверяем с помощью curl доступность вебсервера по адресу 192.168.56.150:8080. Вывод представлен ниже**
 
+**После клонирования репозитория выполняем команду vagrant up, дожидаемся поднятия двух виртуальных машин, после чего запускаем playbook - ansible-playbook nginx.yml. Проверяем с помощью curl доступность вебсервера по адресу 192.168.56.150:8080. Вывод представлен ниже**
 
 ```
 curl http://192.168.56.150:8080
@@ -13,85 +12,85 @@ curl http://192.168.56.150:8080
   <title>Welcome to CentOS</title>
   <style rel="stylesheet" type="text/css"> 
 
-	html {
-	background-image:url(img/html-background.png);
-	background-color: white;
-	font-family: "DejaVu Sans", "Liberation Sans", sans-serif;
-	font-size: 0.85em;
-	line-height: 1.25em;
-	margin: 0 4% 0 4%;
-	}
+ html {
+ background-image:url(img/html-background.png);
+ background-color: white;
+ font-family: "DejaVu Sans", "Liberation Sans", sans-serif;
+ font-size: 0.85em;
+ line-height: 1.25em;
+ margin: 0 4% 0 4%;
+ }
 
-	body {
-	border: 10px solid #fff;
-	margin:0;
-	padding:0;
-	background: #fff;
-	}
+ body {
+ border: 10px solid #fff;
+ margin:0;
+ padding:0;
+ background: #fff;
+ }
 
-	/* Links */
+ /* Links */
 
-	a:link { border-bottom: 1px dotted #ccc; text-decoration: none; color: #204d92; }
-	a:hover { border-bottom:1px dotted #ccc; text-decoration: underline; color: green; }
-	a:active {  border-bottom:1px dotted #ccc; text-decoration: underline; color: #204d92; }
-	a:visited { border-bottom:1px dotted #ccc; text-decoration: none; color: #204d92; }
-	a:visited:hover { border-bottom:1px dotted #ccc; text-decoration: underline; color: green; }
+ a:link { border-bottom: 1px dotted #ccc; text-decoration: none; color: #204d92; }
+ a:hover { border-bottom:1px dotted #ccc; text-decoration: underline; color: green; }
+ a:active {  border-bottom:1px dotted #ccc; text-decoration: underline; color: #204d92; }
+ a:visited { border-bottom:1px dotted #ccc; text-decoration: none; color: #204d92; }
+ a:visited:hover { border-bottom:1px dotted #ccc; text-decoration: underline; color: green; }
  
-	.logo a:link,
-	.logo a:hover,
-	.logo a:visited { border-bottom: none; }
+ .logo a:link,
+ .logo a:hover,
+ .logo a:visited { border-bottom: none; }
 
-	.mainlinks a:link { border-bottom: 1px dotted #ddd; text-decoration: none; color: #eee; }
-	.mainlinks a:hover { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
-	.mainlinks a:active { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
-	.mainlinks a:visited { border-bottom:1px dotted #ddd; text-decoration: none; color: white; }
-	.mainlinks a:visited:hover { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
+ .mainlinks a:link { border-bottom: 1px dotted #ddd; text-decoration: none; color: #eee; }
+ .mainlinks a:hover { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
+ .mainlinks a:active { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
+ .mainlinks a:visited { border-bottom:1px dotted #ddd; text-decoration: none; color: white; }
+ .mainlinks a:visited:hover { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
 
-	/* User interface styles */
+ /* User interface styles */
 
-	#header {
-	margin:0;
-	padding: 0.5em;
-	background: #204D8C url(img/header-background.png);
-	text-align: left;
-	}
+ #header {
+ margin:0;
+ padding: 0.5em;
+ background: #204D8C url(img/header-background.png);
+ text-align: left;
+ }
 
-	.logo {
-	padding: 0;
-	/* For text only logo */
-	font-size: 1.4em;
-	line-height: 1em;
-	font-weight: bold;
-	}
+ .logo {
+ padding: 0;
+ /* For text only logo */
+ font-size: 1.4em;
+ line-height: 1em;
+ font-weight: bold;
+ }
 
-	.logo img {
-	vertical-align: middle;
-	padding-right: 1em;
-	}
+ .logo img {
+ vertical-align: middle;
+ padding-right: 1em;
+ }
 
-	.logo a {
-	color: #fff;
-	text-decoration: none;
-	}
+ .logo a {
+ color: #fff;
+ text-decoration: none;
+ }
 
-	p {
-	line-height:1.5em;
-	}
+ p {
+ line-height:1.5em;
+ }
 
-	h1 { 
-		margin-bottom: 0;
-		line-height: 1.9em; }
-	h2 { 
-		margin-top: 0;
-		line-height: 1.7em; }
+ h1 { 
+  margin-bottom: 0;
+  line-height: 1.9em; }
+ h2 { 
+  margin-top: 0;
+  line-height: 1.7em; }
 
-	#content {
-	clear:both;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 30px;
-	border-bottom: 5px solid #eee;
-	}
+ #content {
+ clear:both;
+ padding-left: 30px;
+ padding-right: 30px;
+ padding-bottom: 30px;
+ border-bottom: 5px solid #eee;
+ }
 
     .mainlinks {
         float: right;
@@ -131,32 +130,32 @@ curl http://192.168.56.150:8080
         <li class="last"> <a href="http://wiki.centos.org/Donate">Donate</a></li>
     </ul>
 
-	<div class="logo">
-		<a href="http://www.centos.org/"><img src="img/centos-logo.png" border="0"></a>
-	</div>
+ <div class="logo">
+  <a href="http://www.centos.org/"><img src="img/centos-logo.png" border="0"></a>
+ </div>
 
 </div>
 
 <div id="content">
 
-	<h1>Welcome to CentOS</h1>
+ <h1>Welcome to CentOS</h1>
 
-	<h2>The Community ENTerprise Operating System</h2>
+ <h2>The Community ENTerprise Operating System</h2>
 
-	<p><a href="http://www.centos.org/">CentOS</a> is an Enterprise-class Linux Distribution derived from sources freely provided
+ <p><a href="http://www.centos.org/">CentOS</a> is an Enterprise-class Linux Distribution derived from sources freely provided
 to the public by Red Hat, Inc. for Red Hat Enterprise Linux.  CentOS conforms fully with the upstream vendors
 redistribution policy and aims to be functionally compatible. (CentOS mainly changes packages to remove upstream vendor
 branding and artwork.)</p>
 
-	<p>CentOS is developed by a small but growing team of core
+ <p>CentOS is developed by a small but growing team of core
 developers.&nbsp; In turn the core developers are supported by an active user community
 including system administrators, network administrators, enterprise users, managers, core Linux contributors and Linux enthusiasts from around the world.</p>
 
-	<p>CentOS has numerous advantages including: an active and growing user community, quickly rebuilt, tested, and QA'ed errata packages, an extensive <a href="http://www.centos.org/download/mirrors/">mirror network</a>, developers who are contactable and responsive, Special Interest Groups (<a href="http://wiki.centos.org/SpecialInterestGroup/">SIGs</a>) to add functionality to the core CentOS distribution, and multiple community support avenues including a <a href="http://wiki.centos.org/">wiki</a>, <a
+ <p>CentOS has numerous advantages including: an active and growing user community, quickly rebuilt, tested, and QA'ed errata packages, an extensive <a href="http://www.centos.org/download/mirrors/">mirror network</a>, developers who are contactable and responsive, Special Interest Groups (<a href="http://wiki.centos.org/SpecialInterestGroup/">SIGs</a>) to add functionality to the core CentOS distribution, and multiple community support avenues including a <a href="http://wiki.centos.org/">wiki</a>, <a
 href="http://wiki.centos.org/irc">IRC Chat</a>, <a href="http://wiki.centos.org/GettingHelp/ListInfo">Email Lists</a>, <a href="https://www.centos.org/forums/">Forums</a>, <a href="http://bugs.centos.org/">Bugs Database</a>, and an <a
 href="http://wiki.centos.org/FAQ/">FAQ</a>.</p>
 
-	</div>
+ </div>
 
 </div>
 
@@ -166,12 +165,11 @@ href="http://wiki.centos.org/FAQ/">FAQ</a>.</p>
 
 ```
 
-
 **Вывод на втором сервере аналогичен и опущен.**
 
 ---
 
-### Описание содержания репозитория.
+### Описание содержания репозитория
 
 ---
 ***1. Для запуска двух виртуальных машин создан [Vagrantfile](https://github.com/ChurikovAnatolii/Playbook-for-NGINX/blob/main/Vagrantfile)***
