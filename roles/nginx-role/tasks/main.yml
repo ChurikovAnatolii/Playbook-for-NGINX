@@ -3,9 +3,9 @@
   yum:
     name: epel-release
     state: present
-    tags:
-      - epel-package
-      - packages
+    # tags:
+    #   - epel-package
+    #   - packages
 
 - name: NGINX | Install NGINX package from EPEL Repo
   yum:
@@ -13,9 +13,9 @@
     state: latest
     notify:
       - restart nginx
-    tags:
-      - nginx-package
-      - packages
+    # tags:
+    #   - nginx-package
+    #   - packages
 
 - name: NGINX | Create NGINX config file from template
   template:
@@ -24,5 +24,5 @@
     notify:
       name: 
         - reload nginx
-    tags:
-      - nginx-configuration
+    # tags:
+    #   - nginx-configuration
