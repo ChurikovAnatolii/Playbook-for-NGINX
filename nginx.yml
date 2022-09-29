@@ -4,7 +4,6 @@
   become: true
 
   tasks:
-    name: Execute nginx-role
     role: nginx-role
 
   # vars:

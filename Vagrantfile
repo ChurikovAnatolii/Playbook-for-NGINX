@@ -37,13 +37,9 @@ Vagrant.configure("2") do |config|
             sed -i '65s/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
             systemctl restart sshd
           SHELL
-=begin 
-          box.vm.provision "ansible" do |ansible|
-            ansible.verbose = "vv"
-            ansible.playbook = "provision/playbook.yml"
-            ansible.become = "true"
+
+ 
           end
-=end
       end
   end
 end
