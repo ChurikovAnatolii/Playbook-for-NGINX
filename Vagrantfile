@@ -37,9 +37,7 @@ Vagrant.configure("2") do |config|
             sed -i '65s/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
             systemctl restart sshd
           SHELL
-
- 
-          end
+    
       end
   end
 end
